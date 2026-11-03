@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectX - Social Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <h2 class="logo">Connect<span>X</span></h2>
+        <input type="text" id="searchInput" placeholder="Search posts...">
+        <div class="nav-profile">SD</div>
+    </header>
+
+    <div class="layout">
+
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <h3>Menu</h3>
+
+            <a href="#" class="menu-item active" data-filter="all">🏠 Home</a>
+            <a href="#" class="menu-item" data-filter="following">👥 Following</a>
+            <a href="#composer">✏️ Create Post</a>
+            <a href="#profile">👤 Profile</a>
+
+            <div class="profile-card" id="profile">
+                <div class="avatar">SD</div>
+                <h3>Sanjay Dharan</h3>
+                <p>@sanjay</p>
+            </div>
+        </aside>
+
+        <!-- Main Feed -->
+        <main class="feed">
+
+            <h2>Home Feed</h2>
+
+            <!-- Create Post -->
+            <section class="composer" id="composer">
+                <div class="avatar">SD</div>
+
+                <div class="composer-content">
+                    <textarea id="postInput"
+                        placeholder="What's happening?"></textarea>
+
+                    <div class="composer-bottom">
+                        <span id="charCount">0 / 280</span>
+                        <button id="postButton">Post</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Posts -->
+            <section id="postsContainer">
+                <!-- JavaScript displays posts here -->
+            </section>
+
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <div class="trending">
+                <h3>What's happening?</h3>
+                <div class="trend">
+                    <small>Trending</small>
+                    <h4>#Technology</h4>
+                    <p>Explore new technologies</p>
+                </div>
+                <div class="trend">
+                    <small>Trending</small>
+                    <h4>#WebDevelopment</h4>
+                    <p>Build something amazing</p>
+                </div>
+                <div class="trend">
+                    <small>Trending</small>
+                    <h4>#Programming</h4>
+                    <p>Learn and grow together</p>
+                </div>
+            </div>
+
+            <div class="suggestions">
+                <h3>Who to follow</h3>
+                <div id="suggestionsContainer"></div>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>© 2026 ConnectX. Made for connecting people.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
